@@ -1,19 +1,15 @@
 <?php
 
+use JetBrains\PhpStorm\Internal\ReturnTypeContract;
+
 require_once(__DIR__ . "/library/common.lib.php");
 
-$root = "https://app.sportdataapi.com/api/v1/soccer/";
-$curl_httpheader_opts = array(
-	"Content-Type: application/json",
-	"apikey: c611add0-6cdf-11ed-9e72-d5c0f082afac"
+$neccessery_data = array(
+	"root" => "https://soccer.sportmonks.com/api/v2.0",
+	"token" => "?api_token=EfSEM5PefLeTpCbu0xn0UHGFUfuz5Zg3HYhmVl4e4iOtc6CvWAKGRirQUsqW",
+	"country_id" => 1161,
+	"season_id" => 19735,
 );
-$required_data = array(
-	"continent" => 'asia',
-	"country_id" => 15,
-	"league-id" => 73,
-	"seasons" => 3097
-);
-$round_ids = array();
 
 function multiRequestForCompetition($__season = 2018, $max_round = 27)
 {
@@ -109,55 +105,6 @@ function __get_round_data($__season, $__round)
 	return __process_competition_data($data);
 }
 
-// get round_ids of a-league 2022/23
-function __get_round_ids($season_id = 3097)
-{
-	global $root, $curl_httpheader_opts;
-	$url = curl_init();
-
-	curl_setopt_array($url, array(
-		CURLOPT_URL => $root . 'rounds/?' . 'season_id=' . $season_id,
-		CURLOPT_RETURNTRANSFER => true,
-		CURLOPT_HTTPHEADER => $curl_httpheader_opts,
-		CURLOPT_HEADER => false
-	));
-
-	$results = json_decode(curl_exec($url))->data;
-	curl_close($url);
-
-	$id_array = [];
-	foreach($results as $result) {
-		$id_array[] = $result->round_id;
-	}
-
-	return $id_array;
-}
-
-// get matches 
-function __get_matches($season_id = 3097)
-{
-	global $root, $curl_httpheader_opts;
-	$url = curl_init();
-
-	curl_setopt_array($url, array(
-		CURLOPT_URL => $root . 'matches?' . 'season_id=' . $season_id,
-		CURLOPT_RETURNTRANSFER => true,
-		CURLOPT_HTTPHEADER => $curl_httpheader_opts,
-		CURLOPT_HEADER => false
-	));
-
-	$results = json_decode(curl_exec($url))->data;
-	curl_close($url);
-	var_dump($results);
-}
-
-__get_matches();
-
-// while (true) {
-
-// }
-
-
 // while (true) {
 // 	$games = [];
 
@@ -165,7 +112,7 @@ __get_matches();
 // 	if(date("n") < 7) $season_year--;
 
 // 	$competitions = multiRequestForCompetition($season_year);
-   
+
 // 	$teams = [];
 // 	$teamIds = [];
 
@@ -226,7 +173,7 @@ __get_matches();
 // 			} 
 // 		}
 // 	}
-	
+
 // 	sendTeamsToServer($teams, 2);
 
 // 	sendFixtureToServer($games, 2);
@@ -238,4 +185,85 @@ __get_matches();
 // 		sleep(60);
 // 		continue;
 // 	}
-// }
+// }	
+
+function __get_round_ids()
+{
+	global $neccessery_data;
+
+	$curl = curl_init();
+
+	curl_setopt_array($curl, array(
+		CURLOPT_URL => $neccessery_data['root'] . '/rounds/season/' . (int)$neccessery_data['season_id'] . $neccessery_data['token'],
+		CURLOPT_RETURNTRANSFER => true,
+	));
+
+	$reasults = json_decode(curl_exec($curl))->data;
+	curl_close($curl);
+
+	$round_ids_array = [];
+
+	foreach ($reasults as $reasult) {
+		$round_ids_array[] = $reasult->id;
+	}
+
+	return $round_ids_array;
+}
+
+function __get_matches_per_round($round_ids)
+{
+	global $neccessery_data;
+
+	$curls = array();
+	$mcurl = curl_multi_init();
+
+	foreach ($round_ids as $id => $round_id) {
+		$curls[$id] = curl_init();
+
+		curl_setopt_array($curls[$id], array(
+			CURLOPT_URL => $neccessery_data['root'] . '/rounds' . $round_id . '?include=fixtures' . $neccessery_data['token'],
+			CURLOPT_RETURNTRANSFER => true,
+		));
+
+		curl_multi_add_handle($mcurl, $curls[$id]);
+	}
+
+	$running = null;
+	do {
+		curl_multi_exec($mcurl, $running);
+	} while ($running > 0);
+
+	$matches_per_round = [];
+	foreach($curls as $id => $curl) {
+		$matches_per_round[] = __process_match_data(curl_multi_getcontent($curl));
+		curl_multi_remove_handle($mcurl, $curl);
+	}
+
+	curl_multi_close($mcurl);
+	return $matches_per_round;
+}
+
+function __process_match_data($data) {
+	$json_data = json_decode($data);
+
+	$matches_of_one_round = $json_data->data->fixtures->data;
+
+	return $matches_of_one_round;
+}
+
+$round_ids = __get_round_ids();
+
+while (true) {
+	$mathes_per_rounds = __get_matches_per_round($round_ids);
+
+	$teams =[];
+	$teamIds = [];
+
+	foreach ($mathes_per_rounds as $matches_of_one_round) {
+		foreach ($matches_of_one_round as $match) {
+			$match_obj = new \stdClass;
+
+			$game_obj->competition_ref_id = $match->id;
+		}
+	}
+}
