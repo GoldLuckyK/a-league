@@ -264,6 +264,7 @@ while (true) {
 			$match_obj = new \stdClass;
 
 			$game_obj->competition_ref_id = $match->id;
+			$game_obj->season_name = $match->season_id;
 		}
 	}
 }
