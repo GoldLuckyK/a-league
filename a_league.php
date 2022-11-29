@@ -6,7 +6,7 @@ require_once(__DIR__ . "/library/common.lib.php");
 
 $neccessery_data = array(
 	"root" => "https://soccer.sportmonks.com/api/v2.0",
-	"token" => "api_token=xmTD1WQsbqvWntC08MEWwqSfczPJu5g5ceBfUfGjqdozIp1E2ZVZCU6Z6Nvi",
+	"token" => "api_token=tJIld2S4bgphAgu5fOJkB2a4YU8AFX0Ibt0ceB1HrR1tLGF4XNmd9k21vSJS",
 	"continent_id" => 4,
 	"country_id" => 98,
 	"league_id" => 1356,
