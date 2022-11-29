@@ -6,9 +6,11 @@ require_once(__DIR__ . "/library/common.lib.php");
 
 $neccessery_data = array(
 	"root" => "https://soccer.sportmonks.com/api/v2.0",
-	"token" => "api_token=tJIld2S4bgphAgu5fOJkB2a4YU8AFX0Ibt0ceB1HrR1tLGF4XNmd9k21vSJS",
-	"country_id" => 1161,
-	"season_id" => 19735,
+	"token" => "api_token=xmTD1WQsbqvWntC08MEWwqSfczPJu5g5ceBfUfGjqdozIp1E2ZVZCU6Z6Nvi",
+	"continent_id" => 4,
+	"country_id" => 98,
+	"league_id" => 1356,
+	"season_id" => 20243,
 );
 
 function __get_round_ids()
