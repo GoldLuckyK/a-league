@@ -1,0 +1,585 @@
+{
+    "data": [
+        {
+            "id": 77459161,
+            "name": "Regular Season",
+            "league_id": 1356,
+            "season_id": 20243,
+            "round_id": 283954,
+            "round_name": 6,
+            "type": "Group Stage",
+            "stage_id": 77459161,
+            "stage_name": "Regular Season",
+            "resource": "stage",
+            "standings": {
+                "data": [
+                    {
+                        "position": 1,
+                        "team_id": 315,
+                        "team_name": "Melbourne City",
+                        "round_id": 283954,
+                        "round_name": 6,
+                        "group_id": null,
+                        "group_name": null,
+                        "overall": {
+                            "games_played": 6,
+                            "won": 5,
+                            "draw": 1,
+                            "lost": 0,
+                            "goals_scored": 14,
+                            "goals_against": 4,
+                            "points": 16
+                        },
+                        "home": {
+                            "games_played": 3,
+                            "won": 2,
+                            "draw": 1,
+                            "lost": 0,
+                            "goals_scored": 8,
+                            "goals_against": 3,
+                            "points": 7
+                        },
+                        "away": {
+                            "games_played": 3,
+                            "won": 3,
+                            "draw": 0,
+                            "lost": 0,
+                            "goals_scored": 6,
+                            "goals_against": 1,
+                            "points": 9
+                        },
+                        "total": {
+                            "goal_difference": "10",
+                            "points": 16
+                        },
+                        "result": "Final Series",
+                        "points": 16,
+                        "recent_form": "WWDWW",
+                        "status": null
+                    },
+                    {
+                        "position": 2,
+                        "team_id": 1264,
+                        "team_name": "Western Sydney Wanderers",
+                        "round_id": 283954,
+                        "round_name": 6,
+                        "group_id": null,
+                        "group_name": null,
+                        "overall": {
+                            "games_played": 6,
+                            "won": 4,
+                            "draw": 1,
+                            "lost": 1,
+                            "goals_scored": 6,
+                            "goals_against": 4,
+                            "points": 13
+                        },
+                        "home": {
+                            "games_played": 4,
+                            "won": 2,
+                            "draw": 1,
+                            "lost": 1,
+                            "goals_scored": 4,
+                            "goals_against": 4,
+                            "points": 7
+                        },
+                        "away": {
+                            "games_played": 2,
+                            "won": 2,
+                            "draw": 0,
+                            "lost": 0,
+                            "goals_scored": 2,
+                            "goals_against": 0,
+                            "points": 6
+                        },
+                        "total": {
+                            "goal_difference": "2",
+                            "points": 13
+                        },
+                        "result": "Final Series",
+                        "points": 13,
+                        "recent_form": "WDWLW",
+                        "status": null
+                    },
+                    {
+                        "position": 3,
+                        "team_id": 2967,
+                        "team_name": "Adelaide United",
+                        "round_id": 283954,
+                        "round_name": 6,
+                        "group_id": null,
+                        "group_name": null,
+                        "overall": {
+                            "games_played": 6,
+                            "won": 3,
+                            "draw": 2,
+                            "lost": 1,
+                            "goals_scored": 12,
+                            "goals_against": 8,
+                            "points": 11
+                        },
+                        "home": {
+                            "games_played": 2,
+                            "won": 2,
+                            "draw": 0,
+                            "lost": 0,
+                            "goals_scored": 5,
+                            "goals_against": 1,
+                            "points": 6
+                        },
+                        "away": {
+                            "games_played": 4,
+                            "won": 1,
+                            "draw": 2,
+                            "lost": 1,
+                            "goals_scored": 7,
+                            "goals_against": 7,
+                            "points": 5
+                        },
+                        "total": {
+                            "goal_difference": "4",
+                            "points": 11
+                        },
+                        "result": "Final Series Play-offs",
+                        "points": 11,
+                        "recent_form": "LDWWW",
+                        "status": null
+                    },
+                    {
+                        "position": 4,
+                        "team_id": 252006,
+                        "team_name": "Macarthur",
+                        "round_id": 283954,
+                        "round_name": 6,
+                        "group_id": null,
+                        "group_name": null,
+                        "overall": {
+                            "games_played": 6,
+                            "won": 2,
+                            "draw": 2,
+                            "lost": 2,
+                            "goals_scored": 9,
+                            "goals_against": 10,
+                            "points": 8
+                        },
+                        "home": {
+                            "games_played": 2,
+                            "won": 1,
+                            "draw": 0,
+                            "lost": 1,
+                            "goals_scored": 4,
+                            "goals_against": 3,
+                            "points": 3
+                        },
+                        "away": {
+                            "games_played": 4,
+                            "won": 1,
+                            "draw": 2,
+                            "lost": 1,
+                            "goals_scored": 5,
+                            "goals_against": 7,
+                            "points": 5
+                        },
+                        "total": {
+                            "goal_difference": "-1",
+                            "points": 8
+                        },
+                        "result": "Final Series Play-offs",
+                        "points": 8,
+                        "recent_form": "WDLLW",
+                        "status": null
+                    },
+                    {
+                        "position": 5,
+                        "team_id": 410,
+                        "team_name": "Central Coast Mariners",
+                        "round_id": 283954,
+                        "round_name": 6,
+                        "group_id": null,
+                        "group_name": null,
+                        "overall": {
+                            "games_played": 5,
+                            "won": 2,
+                            "draw": 1,
+                            "lost": 2,
+                            "goals_scored": 12,
+                            "goals_against": 9,
+                            "points": 7
+                        },
+                        "home": {
+                            "games_played": 3,
+                            "won": 1,
+                            "draw": 0,
+                            "lost": 2,
+                            "goals_scored": 7,
+                            "goals_against": 7,
+                            "points": 3
+                        },
+                        "away": {
+                            "games_played": 2,
+                            "won": 1,
+                            "draw": 1,
+                            "lost": 0,
+                            "goals_scored": 5,
+                            "goals_against": 2,
+                            "points": 4
+                        },
+                        "total": {
+                            "goal_difference": "3",
+                            "points": 7
+                        },
+                        "result": "Final Series Play-offs",
+                        "points": 7,
+                        "recent_form": "DLWWL",
+                        "status": null
+                    },
+                    {
+                        "position": 6,
+                        "team_id": 253,
+                        "team_name": "Sydney",
+                        "round_id": 283954,
+                        "round_name": 6,
+                        "group_id": null,
+                        "group_name": null,
+                        "overall": {
+                            "games_played": 6,
+                            "won": 2,
+                            "draw": 1,
+                            "lost": 3,
+                            "goals_scored": 11,
+                            "goals_against": 12,
+                            "points": 7
+                        },
+                        "home": {
+                            "games_played": 3,
+                            "won": 0,
+                            "draw": 1,
+                            "lost": 2,
+                            "goals_scored": 4,
+                            "goals_against": 6,
+                            "points": 1
+                        },
+                        "away": {
+                            "games_played": 3,
+                            "won": 2,
+                            "draw": 0,
+                            "lost": 1,
+                            "goals_scored": 7,
+                            "goals_against": 6,
+                            "points": 6
+                        },
+                        "total": {
+                            "goal_difference": "-1",
+                            "points": 7
+                        },
+                        "result": "Final Series Play-offs",
+                        "points": 7,
+                        "recent_form": "WDWLL",
+                        "status": null
+                    },
+                    {
+                        "position": 7,
+                        "team_id": 958,
+                        "team_name": "Melbourne Victory",
+                        "round_id": 283954,
+                        "round_name": 6,
+                        "group_id": null,
+                        "group_name": null,
+                        "overall": {
+                            "games_played": 6,
+                            "won": 2,
+                            "draw": 1,
+                            "lost": 3,
+                            "goals_scored": 7,
+                            "goals_against": 8,
+                            "points": 7
+                        },
+                        "home": {
+                            "games_played": 3,
+                            "won": 1,
+                            "draw": 0,
+                            "lost": 2,
+                            "goals_scored": 4,
+                            "goals_against": 3,
+                            "points": 3
+                        },
+                        "away": {
+                            "games_played": 3,
+                            "won": 1,
+                            "draw": 1,
+                            "lost": 1,
+                            "goals_scored": 3,
+                            "goals_against": 5,
+                            "points": 4
+                        },
+                        "total": {
+                            "goal_difference": "-1",
+                            "points": 7
+                        },
+                        "result": null,
+                        "points": 7,
+                        "recent_form": "LLDWL",
+                        "status": null
+                    },
+                    {
+                        "position": 8,
+                        "team_id": 1868,
+                        "team_name": "Wellington Phoenix",
+                        "round_id": 283954,
+                        "round_name": 6,
+                        "group_id": null,
+                        "group_name": null,
+                        "overall": {
+                            "games_played": 6,
+                            "won": 1,
+                            "draw": 3,
+                            "lost": 2,
+                            "goals_scored": 12,
+                            "goals_against": 12,
+                            "points": 6
+                        },
+                        "home": {
+                            "games_played": 4,
+                            "won": 1,
+                            "draw": 2,
+                            "lost": 1,
+                            "goals_scored": 9,
+                            "goals_against": 7,
+                            "points": 5
+                        },
+                        "away": {
+                            "games_played": 2,
+                            "won": 0,
+                            "draw": 1,
+                            "lost": 1,
+                            "goals_scored": 3,
+                            "goals_against": 5,
+                            "points": 1
+                        },
+                        "total": {
+                            "goal_difference": "0",
+                            "points": 6
+                        },
+                        "result": null,
+                        "points": 6,
+                        "recent_form": "DLDWL",
+                        "status": null
+                    },
+                    {
+                        "position": 9,
+                        "team_id": 1238,
+                        "team_name": "Brisbane Roar",
+                        "round_id": 283954,
+                        "round_name": 6,
+                        "group_id": null,
+                        "group_name": null,
+                        "overall": {
+                            "games_played": 5,
+                            "won": 1,
+                            "draw": 3,
+                            "lost": 1,
+                            "goals_scored": 4,
+                            "goals_against": 4,
+                            "points": 6
+                        },
+                        "home": {
+                            "games_played": 4,
+                            "won": 1,
+                            "draw": 2,
+                            "lost": 1,
+                            "goals_scored": 3,
+                            "goals_against": 3,
+                            "points": 5
+                        },
+                        "away": {
+                            "games_played": 1,
+                            "won": 0,
+                            "draw": 1,
+                            "lost": 0,
+                            "goals_scored": 1,
+                            "goals_against": 1,
+                            "points": 1
+                        },
+                        "total": {
+                            "goal_difference": "0",
+                            "points": 6
+                        },
+                        "result": null,
+                        "points": 6,
+                        "recent_form": "DLDDW",
+                        "status": null
+                    },
+                    {
+                        "position": 10,
+                        "team_id": 557,
+                        "team_name": "Newcastle Jets",
+                        "round_id": 283954,
+                        "round_name": 6,
+                        "group_id": null,
+                        "group_name": null,
+                        "overall": {
+                            "games_played": 5,
+                            "won": 2,
+                            "draw": 0,
+                            "lost": 3,
+                            "goals_scored": 6,
+                            "goals_against": 10,
+                            "points": 6
+                        },
+                        "home": {
+                            "games_played": 3,
+                            "won": 2,
+                            "draw": 0,
+                            "lost": 1,
+                            "goals_scored": 6,
+                            "goals_against": 4,
+                            "points": 6
+                        },
+                        "away": {
+                            "games_played": 2,
+                            "won": 0,
+                            "draw": 0,
+                            "lost": 2,
+                            "goals_scored": 0,
+                            "goals_against": 6,
+                            "points": 0
+                        },
+                        "total": {
+                            "goal_difference": "-4",
+                            "points": 6
+                        },
+                        "result": null,
+                        "points": 6,
+                        "recent_form": "WWLLL",
+                        "status": null
+                    },
+                    {
+                        "position": 11,
+                        "team_id": 238265,
+                        "team_name": "Western United",
+                        "round_id": 283954,
+                        "round_name": 6,
+                        "group_id": null,
+                        "group_name": null,
+                        "overall": {
+                            "games_played": 6,
+                            "won": 1,
+                            "draw": 1,
+                            "lost": 4,
+                            "goals_scored": 10,
+                            "goals_against": 16,
+                            "points": 4
+                        },
+                        "home": {
+                            "games_played": 3,
+                            "won": 0,
+                            "draw": 1,
+                            "lost": 2,
+                            "goals_scored": 4,
+                            "goals_against": 8,
+                            "points": 1
+                        },
+                        "away": {
+                            "games_played": 3,
+                            "won": 1,
+                            "draw": 0,
+                            "lost": 2,
+                            "goals_scored": 6,
+                            "goals_against": 8,
+                            "points": 3
+                        },
+                        "total": {
+                            "goal_difference": "-6",
+                            "points": 4
+                        },
+                        "result": null,
+                        "points": 4,
+                        "recent_form": "LDLLW",
+                        "status": null
+                    },
+                    {
+                        "position": 12,
+                        "team_id": 300,
+                        "team_name": "Perth Glory",
+                        "round_id": 283954,
+                        "round_name": 6,
+                        "group_id": null,
+                        "group_name": null,
+                        "overall": {
+                            "games_played": 5,
+                            "won": 1,
+                            "draw": 0,
+                            "lost": 4,
+                            "goals_scored": 4,
+                            "goals_against": 10,
+                            "points": 3
+                        },
+                        "home": {
+                            "games_played": 0,
+                            "won": 0,
+                            "draw": 0,
+                            "lost": 0,
+                            "goals_scored": 0,
+                            "goals_against": 0,
+                            "points": 0
+                        },
+                        "away": {
+                            "games_played": 5,
+                            "won": 1,
+                            "draw": 0,
+                            "lost": 4,
+                            "goals_scored": 4,
+                            "goals_against": 10,
+                            "points": 3
+                        },
+                        "total": {
+                            "goal_difference": "-6",
+                            "points": 3
+                        },
+                        "result": null,
+                        "points": 3,
+                        "recent_form": "LLWLL",
+                        "status": null
+                    }
+                ]
+            }
+        }
+    ],
+    "meta": {
+        "subscription": {
+            "started_at": {
+                "date": "2022-11-29 07:38:33.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "trial_ends_at": {
+                "date": "2022-12-13 08:37:43.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "ends_at": {
+                "date": "2022-12-29 07:38:29.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            }
+        },
+        "plans": [
+            {
+                "name": "Worldwide Plan",
+                "features": "Standard",
+                "price_monthly": "169.00",
+                "price_yearly": "1788.00",
+                "request_limit": "2000,60",
+                "sport": "Soccer"
+            }
+        ],
+        "add-ons": [],
+        "sports": [
+            {
+                "id": 1,
+                "name": "Soccer",
+                "current": true
+            }
+        ]
+    }
+}
